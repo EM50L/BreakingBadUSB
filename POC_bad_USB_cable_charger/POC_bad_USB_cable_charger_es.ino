@@ -32,7 +32,7 @@
 //4) después dejo otra vez el usb libre. (alta impedancia) Y reinicio micro.
 
 //Carga librerias y definion Pins
-#include "DigiKeyboard.h"
+#include "DigiKeyboard.h"  //found in https://github.com/ArminJo/DigistumpArduino
 #define  USB_PullUp 2 //Pin7 Pb2 
 #define  USB_P      3 //Pin2 Pb3 USB- A3 
 #define  USB_N      4 //Pin3 Pb4 USB+ A2
