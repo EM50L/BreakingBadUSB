@@ -1,4 +1,5 @@
 Esquema:
+
 ![](./img/POC_connect_disconnect_keyboard_schema.png) 
 
 Pasos del poc:
