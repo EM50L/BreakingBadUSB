@@ -5,14 +5,18 @@
 // https://euskalhack.org/ 
 //
 // =============================================================================================             
-//                                 Attiny85
-//                                  +-\/-+
-// RESET/ADC0 (D5) PB5     /-------1|    |8  VCC
-//  USB- ADC3 (D3) PB3    /  /-----2|    |7  PB2 (D2) SCK/SCL/INT0/ADC1 - default TX Debug output for ATtinySerialOut
-//  USB+ ADC2 (D4) PB4   /  /  /---3|    |6  PB1 (D1) MISO/DO/OC0B/OC1A/AIN1/PCINT1 - (Digispark) LED
-//                 GND  /  /  /  /-4|    |5  PB0 (D0) MOSI/DI/SDA/OC0A/AIN0
+//                                 Diode LED
+//                             +------>|------+
+//                             |    R 3k3     |
+//                             | +--\/\/\---+ |
+//                             | |          | |
+//                             | |  +-\/-+  | |
+// RESET/ADC0 (D5) PB5     /---+---1|    |8---+ VCC
+//  USB- ADC3 (D3) PB3    /  /---+-2|    |7-+   PB2 (D2) SCK/SCL/INT0/ADC1 - default TX Debug output for ATtinySerialOut
+//  USB+ ADC2 (D4) PB4   /  /  /---3|    |6     PB1 (D1) MISO/DO/OC0B/OC1A/AIN1/PCINT1 - (Digispark) LED
+//                 GND  /  /  /  /-4|    |5     PB0 (D0) MOSI/DI/SDA/OC0A/AIN0
 //                     /  /  /  /   +----+
-//                    /  /  /  /                          
+//        USB A(PC)   /  /  /  /   Attiny85               Micro USB (phone)      
 //       +--------+  /  /  /  /                           __
 // Vcc   | ====== --+--/--/--/---------------------------/  |
 // USB+  |   ==== ----+--/--/----------------------------| :|
@@ -21,6 +25,7 @@
 //       +--------+                                      
 //
 //
+//Explicacion:
 //1) dejo pasar las señales USB a través del cable. (patillas usb en alta impedancia)
 //2) espero a que se enganche(a) y se desenganche(b) un dispositivo
 //3) a los 10seg de la desconexión Inicio teclado y lanzo "Payload" (carga util).
