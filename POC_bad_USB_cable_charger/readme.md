@@ -1,5 +1,5 @@
 # BreakingBadUSB
-[CharlaHablamos de Seguridad digital. (Edificio Euskaltel 12-11-2021)](https://blog.euskaltel.com/hablamos-seguridad-digital-asociacion-euskalhack/)
+[Charla: Hablamos de Seguridad digital. (Edificio Euskaltel 12-11-2021)](https://blog.euskaltel.com/hablamos-seguridad-digital-asociacion-euskalhack/)
 
 ![](./img/Animation_POC_bad_USB_cable_charger.gif) 
 
